@@ -1,0 +1,18 @@
+-> connect with respective environment Linux VM using fileZila
+-> connect with respective environment Linux VM using putty
+-> write following command on putty
+	screen -r 
+	then select any from above as both represents different environment and write
+		sreen -r selected.Name.from.above
+	CTRL + C 
+	to terminate respective ports process
+-> locations are given below for DEV, QA and UAT
+-> move all files excluding config.json and model files (include if changes have been made in config or models)
+   in respective directory
+-> source activate ml-api
+	run this command to activate the environment if it is inactive
+-> gunicorn -b 0.0.0.0:8080 wsgi:app -k gevent --worker-connections 10
+   run this command and press CTRL + a + d to come out of that screen
+-> close putty and you are done
+-> TO run this from local, use "SQL Server Native Client 10.0" in connection string in config
+-> TO run this from not local, use "ODBC Driver 17 for SQL Server" in connection string in config

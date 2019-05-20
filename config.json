@@ -1,0 +1,19 @@
+{
+  "DATABASE_CONFIG": {
+    "DRIVER":"SQL Server Native Client 10.0",
+    "HOST": "10.100.100.77",
+    "DATABASE_NAME": "VisiOCRDB_NPF",
+    "USERNAME": "sa",
+    "PASSWORD": "abcd@1234"
+  },
+  "MODELS": {
+    "DOC2VEC": "d2v",
+    "RANDOM_FOREST": "LR_classifier"
+  },
+  "APP_SETTINGS": {
+    "UNKNOWN_DOCUMENT": "5254",
+    "GOOD_ACCURACY_SCORE": 90,
+    "FAIR_ACCURACY_SCORE": 80,
+	"PROBLEMATIC_DOCUMENTS": ["6668", "487", "1330", "6723", "6061"]
+  }
+}
